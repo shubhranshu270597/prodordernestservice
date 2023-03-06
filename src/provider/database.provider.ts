@@ -10,11 +10,11 @@ export const databaseProvider = [
         useFactory: async () =>
             await createConnection({
                 type : 'postgres',
-                host: 'localhost',
+                host: 'ec2-52-21-136-176.compute-1.amazonaws.com',
                 port: 5432,
-                username: 'postgres',
-                password: 'admin@123',
-                database: 'admin',
+                username: 'jtffvortmzhoeq',
+                password: '3a794e607dddbec15cdf530565c56712708cd74dc63ddee9ded2b69eea06d6d8',
+                database: 'd2irpkhtlbsi5e',
                 entities: [ Prod, Order, User ] ,
                 synchronize: true,
 
